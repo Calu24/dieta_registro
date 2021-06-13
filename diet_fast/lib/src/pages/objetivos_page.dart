@@ -64,12 +64,16 @@ class _ListaObjetivos extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 80),
-            child: RaisedButton(
+            child: ElevatedButton(
               onPressed: (){
                 Navigator.pushReplacementNamed(context, 'comida');
               },
-              shape: StadiumBorder(),
-              color: Color(0xff73a270),
+              style: ElevatedButton.styleFrom(
+                primary: Theme.of(context).primaryColor,
+                shape: StadiumBorder(),
+                onPrimary: Colors.white),
+              //shape: StadiumBorder(),
+              //color: Color(0xff73a270),
               child: Padding(
                 padding: EdgeInsets.symmetric(vertical: 10.0),
                 child: Center(child: Text('siguiente', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),)),

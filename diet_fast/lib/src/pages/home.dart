@@ -145,7 +145,7 @@ class _ActionsFooter extends StatelessWidget {
   }
 
   _saltar(BuildContext context) {
-    return FlatButton(
+    return TextButton(
       onPressed: (){
         Navigator.pushNamed(context, 'login');
       }, 
@@ -157,7 +157,7 @@ class _ActionsFooter extends StatelessWidget {
   }
 
   _siguiente(BuildContext context) {
-    return FlatButton(
+    return TextButton(
       onPressed: (){
         if(pageController.page == numPaginas-1){
           Navigator.pushNamed(context, 'login');
